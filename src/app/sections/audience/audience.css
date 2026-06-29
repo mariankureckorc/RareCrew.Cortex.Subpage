@@ -1,0 +1,77 @@
+.audience {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 32px 84px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.eyebrow-dash {
+  width: 26px;
+  height: 2px;
+  background: #D2691E;
+}
+
+.eyebrow-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: #D2691E;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ECE6DE;
+  border-radius: 14px;
+  padding: 26px;
+}
+
+.card-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #D2691E;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5B6068;
+  margin: 0;
+}
+
+@media (max-width: 920px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .audience {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

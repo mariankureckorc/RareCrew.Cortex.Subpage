@@ -1,0 +1,16 @@
+<section class="audience">
+  <div class="eyebrow">
+    <span class="eyebrow-dash"></span>
+    <span class="eyebrow-label">Who It's For</span>
+    <span class="eyebrow-dash"></span>
+  </div>
+  <div class="grid">
+    @for (a of audiences; track a.num) {
+      <div class="card">
+        <div class="card-num">{{ a.num }}</div>
+        <h3 class="card-title">{{ a.title }}</h3>
+        <p class="card-text">{{ a.text }}</p>
+      </div>
+    }
+  </div>
+</section>

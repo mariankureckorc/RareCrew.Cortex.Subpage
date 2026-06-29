@@ -1,0 +1,39 @@
+.footer {
+  background: #fff;
+  border-top: 1px solid #ECE6DE;
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 30px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.brand-name {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.copy {
+  font-size: 13px;
+  color: #9A9087;
+}
+
+@media (max-width: 920px) {
+  .inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

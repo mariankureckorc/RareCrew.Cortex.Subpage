@@ -1,0 +1,102 @@
+.problem {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 84px 32px;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.eyebrow-dash {
+  width: 26px;
+  height: 2px;
+  background: #D2691E;
+}
+
+.eyebrow-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: #D2691E;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.lead {
+  font-size: 17px;
+  line-height: 1.68;
+  color: #5B6068;
+  margin: 0 0 20px;
+}
+
+.lead--last {
+  margin: 0 0 36px;
+}
+
+.divider {
+  height: 1px;
+  background: #ECE6DE;
+  margin-bottom: 34px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.stat-num {
+  font-size: 46px;
+  font-weight: 600;
+  color: #D2691E;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.stat-dash {
+  width: 34px;
+  height: 2px;
+  background: linear-gradient(90deg, #E0642A, transparent);
+  margin: 14px 0 12px;
+}
+
+.stat-label {
+  font-size: 13.5px;
+  color: #5B6068;
+  line-height: 1.45;
+}
+
+@media (max-width: 920px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .problem {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .stat-row {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

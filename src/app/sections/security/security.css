@@ -1,0 +1,100 @@
+.security {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 84px 32px;
+  scroll-margin-top: 84px;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 0.86fr 1.14fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.eyebrow-dash {
+  width: 26px;
+  height: 2px;
+  background: #D2691E;
+}
+
+.eyebrow-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: #D2691E;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.07;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ECE6DE;
+  border-radius: 14px;
+  padding: 28px;
+  transition: transform .2s, border-color .2s, box-shadow .2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #E0C9B3;
+  box-shadow: 0 12px 28px rgba(23, 23, 23, .06);
+}
+
+.icon-chip {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #FBEDE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5B6068;
+  margin: 0;
+}
+
+@media (max-width: 920px) {
+  .wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .security {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
